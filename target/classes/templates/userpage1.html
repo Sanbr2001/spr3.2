@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h2>News <br> Only accessible to logged-in users.</h2>
+    <form>
+        HELLO <th th:text="${user.getUsername()}"></th>
+    </form>
+    <h4><a href="/">Home</a></h4>
+    <h4><a th:href="@{/logout}">Logout</a></h4>
+</div>
+</body>
+</html>
